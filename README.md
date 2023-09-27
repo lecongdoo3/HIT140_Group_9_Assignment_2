@@ -5,30 +5,34 @@ The goal of this project is to Diagnosing Parkinson’s Disease using voice samp
 ## Data
 We use a dataset provided by our lecturer in a CSV file. The original study collected the voice recordings of 42 subjects with early-stage Parkinson’s disease, with each participant contributing between 101 and 168 voice samples. These samples were then broken down into various acoustic characteristics using a software named Praat.
 
+We also used another dataset in a .txt file to validate the models which was provided in the previous assignment. The dataset contains voice recordings from 20 individuals with Parkinson's disease and 20 without. Each of these participants contributed 26 voice samples, and these were also extracted for different acoustic characteristics using software called Praat.
+
 Learn more about Praat software: https://www.fon.hum.uva.nl/praat/
 
 ## Methodology
-We first used simple linear regression as a baseline model, then, after realising the R-squared is too low, we decided to build multiple linear regression models. 
+We started with a basic linear regression model. However, after seeing that its R-squared value was unsatisfactory, we transitioned to using multiple linear regression, which showed improved performance. We then refined our model by applying various optimization techniques. This included using log-transformation and examining collinearity. Next, we standardized the data and used a Gaussian transformation. Finally, we fine-tuned the model's settings using hyperparameter optimization and tested the performance of the models using the dataset from our previous assignment.
 
 ## Results
+After apply log-tranformation, Gaussian transformation, backward feature selection combined with collinearity analysis, we have the best models to predict UPDRS scores (Adjusted R-squared = 0.187 for motor_updrs and 0.188 for total_updrs).
 
+The predictors to build the model of motor_updrs are: 'age', 'test_time', 'jitter(%)', 'jitter(abs)', 'jitter(ppq5)', 'shimmer(%)', 'shimmer(apq5)', 'shimmer(apq11)', 'nhr', 'hnr', 'rpde', 'dfa', 'ppe', 'harmonicity_difference', 'log_shimmer(apq3)', 'log_shimmer(dda)'.
+
+The predictors to build the model of total_updrs are: 'age', 'test_time', 'shimmer(apq5)', 'shimmer(apq11)', 'nhr', 'hnr', 'rpde', 'dfa', 'ppe', 'jitter_shimmer_difference_ratio', 'harmonicity_difference', 'log_shimmer(apq3)', 'log_shimmer(dda)', 'log_jitter(rap)'.
 
 ## Installation and usage guide
-numpy: Used for numerical operations.
+numpy: Provides support for working with arrays and various mathematical functions. Installation: pip install numpy
 
-pandas: For data manipulation and analysis.
+pandas: A powerful data manipulation and analysis library. Installation: pip install pandas
 
-matplotlib: For plotting and visualization.
+matplotlib: A plotting library for creating static, animated, and interactive visualizations. Installation: pip install matplotlib
 
-statistics: Provides functions to compute mathematical statistics of numeric data.
+seaborn: A data visualization library based on matplotlib that provides a higher-level interface for drawing attractive statistical graphics. Installation: pip install seaborn
 
-scipy: Used for high-level computations. Specifically, scipy.stats is being imported here.
+scipy: Used for mathematical operations and has support for linear algebra, optimization, integration, and statistics. Installation: pip install scipy
 
-statsmodels: Provides classes and functions for the estimation of statistical models.
+statsmodels: Provides classes and functions for the estimation of many different statistical models, as well as for conducting statistical tests. Installation: pip install statsmodels
 
-To install these packages (if you haven't already), you can use 'pip'.
-
-For example: pip install matplotlib
+sklearn (scikit-learn): A machine learning library that provides tools for data mining and data analysis. Installation: pip install scikit-learn
 
 ## Acknowledgement
 We'd like to express our gratitude to our lecturer Dr. Yakub Sebastian at CDU for his invaluable guidance and insights throughout the duration of this project.
@@ -41,12 +45,6 @@ Any concerns or contributions you might have, please feel free to reach me throu
 ## References
 AZADI, H., AKBARZADEH-T, M.-R., SHOEIBI, A. & KOBRAVI, H. R. 2021. Evaluating the effect of Parkinson's disease on jitter and shimmer speech features. Advanced Biomedical Research, 10.
 
-FERRAND, C. T. 2002. Harmonics-to-noise ratio: an index of vocal aging. Journal of voice, 16, 480-487.
-
-FARRÚS, M., HERNANDO, J. & EJARQUE, P. Jitter and shimmer measurements for speaker recognition.  8th Annual Conference of the International Speech Communication Association; 2007 Aug. 27-31; Antwerp (Belgium).[place unknown]: ISCA; 2007. p. 778-81., 2007. International Speech Communication Association (ISCA).
-
-RAMIG, L. O., FOX, C. & SAPIR, S. 2008. Speech treatment for Parkinson’s disease. Expert Review of Neurotherapeutics, 8, 297-309.
+BENBA, A., JILBAB, A. & HAMMOUCH, A. 2016. Voice analysis for detecting patients with Parkinson's disease using the hybridization of the best acoustic features. International Journal on Electrical Engineering and Informatics, 8, 108.
 
 KHAN, T., WESTIN, J. & DOUGHERTY, M. 2014. Classification of speech intelligibility in Parkinson's disease. Biocybernetics and Biomedical Engineering, 34, 35-45.
-
-BENBA, A., JILBAB, A. & HAMMOUCH, A. 2016. Voice analysis for detecting patients with Parkinson's disease using the hybridization of the best acoustic features. International Journal on Electrical Engineering and Informatics, 8, 108.
