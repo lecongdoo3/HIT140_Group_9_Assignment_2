@@ -35,7 +35,7 @@ statsmodels: Provides classes and functions for the estimation of many different
 sklearn (scikit-learn): A machine learning library that provides tools for data mining and data analysis. Installation: pip install scikit-learn
 
 ## Acknowledgement
-We'd like to express our gratitude to our lecturer Dr. Yakub Sebastian at CDU for his invaluable guidance and insights throughout the duration of this project.
+We'd like to express our gratitude to our lecturer Dr. Yakub Sebastian at CDU for his invaluable guidance and insights throughout this project and Prof. Andrew Ng for the inspirational machine learning course on Coursera.
 
 ## List of project participants and contacts
 I spearheaded this project as the team leader, with the invaluable collaboration of three other members: Thi Minh Chau Pham, Hai Dang Dang, and Quoc Vinh Nguyen.
@@ -48,3 +48,8 @@ AZADI, H., AKBARZADEH-T, M.-R., SHOEIBI, A. & KOBRAVI, H. R. 2021. Evaluating th
 BENBA, A., JILBAB, A. & HAMMOUCH, A. 2016. Voice analysis for detecting patients with Parkinson's disease using the hybridization of the best acoustic features. International Journal on Electrical Engineering and Informatics, 8, 108.
 
 KHAN, T., WESTIN, J. & DOUGHERTY, M. 2014. Classification of speech intelligibility in Parkinson's disease. Biocybernetics and Biomedical Engineering, 34, 35-45.
+
+NATIONAL INSTITUTES OF NEUROLOGICAL DISORDERS AND STROKE. 2023. Parkinson's Disease [Online]. Available: https://www.ninds.nih.gov/health-information/disorders/parkinsons-disease [Accessed].
+
+PARKINSON’S FOUNDATION. Notable Figures with Parkinson’s [Online]. Available: https://www.parkinson.org/understanding-parkinsons/statistics/notable-figures [Accessed].
+
