@@ -1,6 +1,6 @@
 # Group Assessment 2 for unit HIT140 - Group 9
 ## Objective
-By examining these voice samples, we aim to explore the potential of speech data as a diagnostic tool. This project aims to predict the motor and total UPDRS scores (motor and total), which indicate the severity and progression of PD in patients.
+By examining these voice samples, we aim to explore the potential of speech data as a diagnostic tool. This project aims to predict the motor and total UPDRS scores, which indicate the severity and progression of PD in patients.
 
 ## Data
 We use a dataset provided by our lecturer in a CSV file. The original study collected the voice recordings of 42 subjects with early-stage Parkinson’s disease, with each participant contributing between 101 and 168 voice samples. These samples were then broken down into various acoustic characteristics using a software named Praat.
