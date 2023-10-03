@@ -2,7 +2,7 @@
 ## Objective
 By examining these voice samples, we aim to explore the potential of speech data as a diagnostic tool. This project aims to predict the motor and total UPDRS scores, which indicate the severity and progression of PD in patients.
 
-## Data
+## Datasets
 We use a dataset provided by our lecturer in a CSV file. The original study collected the voice recordings of 42 subjects with early-stage Parkinson’s disease, with each participant contributing between 101 and 168 voice samples. These samples were then broken down into various acoustic characteristics using a software named Praat.
 
 We also used another dataset in a .txt file to validate the models which was provided in the previous assignment. The dataset contains voice recordings from 20 individuals with Parkinson's disease and 20 without. Each of these participants contributed 26 voice samples, and these were also extracted for different acoustic characteristics using software called Praat.
@@ -34,7 +34,7 @@ statsmodels: Provides classes and functions for the estimation of many different
 
 sklearn (scikit-learn): A machine learning library that provides tools for data mining and data analysis. Installation: pip install scikit-learn
 
-## Acknowledgement
+## Acknowledgements
 We'd like to express our gratitude to our lecturer Dr. Yakub Sebastian at CDU for his invaluable guidance and insights throughout this project and Prof. Andrew Ng for the inspirational machine learning course on Coursera.
 
 ## List of project participants and contacts
